@@ -1,6 +1,5 @@
 import streamlit as st
 import sqlite3
-@st.cache (allow_output_mutation=True)
 cur=sqlite3.connect('contact.db',check_same_thread=False)
 st.write('Contact Information')
 with st.form(key='Contact'):
